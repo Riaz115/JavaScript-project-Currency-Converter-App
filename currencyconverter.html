@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currencyconverter.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="currency-converter">
+      <h2>Currency Converter</h2>
+      <form class="my-2">
+        <div class="amount">
+          <div class="mb-1"><h4>Enter amount</h4></div>
+          <input class="mb-4" value="" type="text" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <div><h4>From</h4></div>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+          <div class="to">
+            <div><h4>To</h4></div>
+            <div class="select-container">
+              <img src="https://flagsapi.com/PK/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1USD = 277rupees</div>
+        <button>get exchange rate</button>
+      </form>
+    </div>
+    <script src="countrynameandcurr.js"></script>
+    <script src="currencyconverter.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
